@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+        <form action="#">
+            <div class="form__title">Укажите ключевое слово</div>
+            <div class="form__input" >
+                <input type="text" placeholder="Введите ключевое слово">
+            </div>
+            <div class="form__button">
+                <button type="submit" onclick="checkValue()">отправить</button>
+            </div>
+        
+    </form>
+    <script>
+        function checkValue() {
+            const inputElement = document.querySelector('input');
+            const inputValue = inputElement.value;
+
+            
+            if (inputValue == "энигма" || inputValue == "enigma") {
+                alert('Вы ответили правильно'); 
+            } else {
+                alert('Ответ неверный'); 
+            }
+        }
+    </script>
+</body>
+</html>
